@@ -1,7 +1,11 @@
 一覧画面
 <% @lists.each do |list| %>
+  <% binding.pry %>
   <div>
   タイトル:<%= list.title %>
   本文:<%= list.body %>
   </div>
 <% end%>
+
+<%= link_to "新規投稿", new_todolist_path %>
+<%=%>
